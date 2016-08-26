@@ -1,0 +1,105 @@
+Hello.|Greetings|Hi. How can I help you?
+Hello!|Greetings|Hi. How can I help you?
+Hello|Greetings|Hi. How can I help you?
+Hi!|Greetings|Hello. How can I help you?
+Hi.|Greetings|Hello. How can I help you?
+Hi|Greetings|Hello. How can I help you?
+Hey!|Greetings|Hello. How can I help you?
+Hey.|Greetings|Hello. How can I help you?
+Hey|Greetings|Hello. How can I help you?
+Heyy|Greetings|Hello. How can I help you?
+Heyy.|Greetings|Hello. How can I help you?
+Hola|Greetings|Hello. How can I help you?
+Hola.|Greetings|Hello. How can I help you?
+Hola!|Greetings|Hello. How can I help you?
+
+Good morning|Greetings|Good Morning. How can I help you?
+Good morning :)|Greetings|Good Morning. How can I help you?
+Gd mrng|Greetings|Good Morning. How can I help you?
+Gm|Greetings|Good Morning. How can I help you?
+Gud mrng|Greetings|Good Morning. How can I help you?
+Good afternoon|Greetings|Good afternoon. How can I help you?
+Good afternoon|Greetings|Good afternoon. How can I help you?
+Gd aftrnun|Greetings|Good afternoon. How can I help you?
+Good evening|Greetings|Good evening. How can I help you?
+Gud evng|Greetings|Good evening. How can I help you?
+Gd evng|Greetings|Good evening. How can I help you?
+Good evng|Greetings|Good evening. How can I help you?
+Gud mrng|Greetings|Good Morning. How can I help you?
+Good night|Greetings|Good night. Take care.
+Gd n8|Greetings|Good night. Take care.
+Gn|Greetings|Good night. Take care.
+
+How are you?|Greetings|I'm fine! How are you?
+How are you|Greetings|I'm fine! How are you?
+How are you?|Greetings|I'm fine! How are you?
+How are you today?|Greetings|I'm fine! How are you?
+How are you today?|Greetings|I'm fine! How are you?
+How are you today|Greetings|I'm fine! How are you?
+How do you do?|Greetings|Fine, thank you. How can I help you?
+
+What is my name?|Greetings|Your name is %(name)s
+Tell me my name?|Greetings|Your name is %(name)s
+my name?|Greetings|Your name is %(name)s
+
+why are you here?|Greetings|I'm here to assist you in your leaves quest.
+why are you here|Greetings|I'm here to assist you in your leaves quest.
+
+It has been great talking to you.|Greetings|Thank you! Have a good day!
+want help|Greetings|How can I help you?
+need help|Greetings|How can I help you?
+help me|Greetings|How can I help you?
+
+nice|Greetings|It's glad to know that I have been helpful.
+nice.|Greetings|It's glad to know that I have been helpful.
+nice :)|Greetings|It's glad to know that I have been helpful.
+great|Greetings|It's glad to know that I have been helpful.
+
+thank you for your help|Greetings|You're welcome! Have a good day!
+thank you for your assistance|Greetings|You're welcome! Have a good day!
+thank you|Greetings|You're welcome! Have a good day!
+thank you very much|Greetings|You're welcome! Have a good day!
+thanks.|Greetings|You're welcome! Have a good day!
+thanks|Greetings|You're welcome! Have a good day!
+thanks very much|Greetings|You're welcome! Have a good day!
+:)|Greetings|Thank you for giving me chance to assist you! Have a good day!
+Bye :)|Greetings|Thank you for giving me chance to assist you! Have a good day!
+
+
+I don't want your help.|Greetings|Ok sir/madam. No problem. Have a nice day.
+I don't want your assistance.|Greetings|Ok sir/madam. No problem. Have a nice day.
+I don't want your assistance|Greetings|Ok sir/madam. No problem. Have a nice day.
+No help required|Greetings|Ok sir/madam. No problem. Have a nice day.
+
+When is India Away Day 2016?|Away Day|India Away Day 2016 is on %(date).
+When is India Away Day?|Away Day|India Away Day 2016 is on %(date).
+India Away Day 2016?|Away Day|India Away Day 2016 is on %(date).
+
+What time is my flight|Away Day|Your flight is at %(flight_time)
+
+Is it mandatory to come?|Away Day|No
+mandatory to come?|Away Day|No
+Is my booking confirmed?|Away Day|Your booking is confirmed.
+Is my booking confirmed.|Away Day|Your booking is confirmed.
+booking confirmed?|Away Day|Your booking is confirmed.
+
+Who are my room mates?|Away Day|Your room mates are %(room_mates)
+my room mates?|Away Day|Your room mates are %(room_mates)
+my room mates list?|Away Day|Your room mates are %(room_mates)
+
+Venue for 1-1 on super villain session|Away Day|1-1 on super villain session will be in %(venue) room
+1-1 on super villain session|Away Day|1-1 on super villain session will be in %(venue) room
+
+Track for 1-1 on super villain session|Away Day|1-1 on super villain session will be in %(track) track
+1-1 on super villain session track|Away Day|1-1 on super villain session will be in %(track) track
+
+Who is in the dais for 1-1 on super villain session?|Away Day|1-1 on super villain session is taken by %(speaker)
+Who is in the dais for 1-1 on super villain session.|Away Day|1-1 on super villain session is taken by %(speaker)
+at the dais for 1-1 on super villain session?|Away Day|1-1 on super villain session is taken by %(speaker)
+who is the speaker for 1-1 on super villain session?|Away Day|1-1 on super villain session is taken by %(speaker)
+who is the speaker for 1-1 on super villain session.|Away Day|1-1 on super villain session is taken by %(speaker)
+speaker for 1-1 on super villain session?|Away Day|1-1 on super villain session is taken by %(speaker)
+who is the conductor for 1-1 on super villain session?|Away Day|1-1 on super villain session is taken by %(speaker)
+who is the conductor for 1-1 on super villain session.|Away Day|1-1 on super villain session is taken by %(speaker)
+conductor for 1-1 on super villain session?|Away Day|1-1 on super villain session is taken by %(speaker)
+
