@@ -7,8 +7,8 @@ from utils.path import *
 from utils.utils import *
 
 
-def get_leave_info(emp_id):
-  test_leave_info = {
+def get_awayday_details(emp_id):
+  away_day_info = {
     'name': 'Amar',
     'date': '30th October 2016',
     'room_mates': 'Akbar and Anthony',
@@ -17,7 +17,7 @@ def get_leave_info(emp_id):
     'flight_time': '09:30',
     'speaker': 'Mogembo'
   }
-  return test_leave_info
+  return away_day_info
 
 data_filename = "data.txt"
 help_agent = Glados(data_filename)
@@ -39,7 +39,7 @@ class HelpApi(Resource):
     emp_id = args['ID']
     default_response = "I'm afraid, I don't understand. I'm sorry"
 
-    leave_info = get_leave_info(emp_id)
+    awayday_info = get_awayday_details(emp_id)
     if is_empty(question):
       return {"reply": "You said nothing!! What's up? Are you okay?"}
 
@@ -48,7 +48,7 @@ class HelpApi(Resource):
 
     if is_empty(answer):
       return default_response
-    ans['answer'] = format_answer(ans['answer'], leave_info)
+    ans['answer'] = format_answer(ans['answer'], awayday_info)
     ans['timestamp'] = get_timestamp()
 
     if ans['probability'] < 0.2:
