@@ -28,8 +28,9 @@ Core engine component which does the following
 git clone https://github.com/KittuJain/chatty.git
 cd chatty
 
-source "/usr/bin/virtualenvwrapper.sh"
-export WORKON_HOME="/opt/virtual_env/"
+You can put it in your ~/.zshrc or ~/.bashrc
+source "/usr/local/bin/virtualenvwrapper.sh"
+export WORKON_HOME="/$HOME/virtual_env/"
 
 [[ -n $VIRTUAL_ENV ]] && mkvirtualenv chatty --python=/usr/local/bin/python3
 [[ -z $VIRTUAL_ENV ]] && workon chatty
