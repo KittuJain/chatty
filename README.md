@@ -25,7 +25,7 @@ Core engine component which does the following
 
 ### Setup ###
 ```
-git clone https://github.com/KittuJain/chatty
+git clone https://github.com/KittuJain/chatty.git
 cd chatty
 
 source "/usr/bin/virtualenvwrapper.sh"
