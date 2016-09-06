@@ -11,5 +11,5 @@ def get_timestamp():
   d = datetime.now()
   return time.mktime(d.timetuple())
 
-def format_answer(text, leave_info):
-  return text % leave_info
+def format_answer(text, info):
+  return text % info

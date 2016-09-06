@@ -2,6 +2,7 @@ import sys
 import logging
 import random
 import nltk
+import json
 from nltk.classify import SklearnClassifier
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.svm import SVC
@@ -31,11 +32,11 @@ class Glados(object):
 
     def get_help(self, question):
         features = self.parser.extract_feature(question)
-        logging.debug('features', features)
+        print('features', features)
         answer = self.classifier.classify(features)
         prob = self.classifier.prob_classify(features).prob(answer)
-        self.logger.info('features for question are %s', features)
-        logging.debug('Answer:', answer, "(", prob, ")")
+        # self.logger.info('features for question are %s', features)
+        print('Answer:', answer, "(", prob, ")")
         response = dict(question=question, answer=answer, probability=prob)
         return response
 
@@ -78,8 +79,8 @@ class Glados(object):
             guess = classifier.classify(feature)
             if (guess != actual_output):
                 errors.append((feature, actual_output, guess))
-        logging.debug('>>>>>FEATURE>>>>>>>>>ACUTUAL OUTPUT><<<<<<<<PREDICTION<<<<<<<<<<<<<<<')
-        logging.debug('Errors:', json.dumps(errors))
+        print('>>>>>FEATURE>>>>>>>>>ACUTUAL OUTPUT><<<<<<<<PREDICTION<<<<<<<<<<<<<<<')
+        print('Errors:', json.dumps(errors))
 
     def train_using_naive_bayes(self, training_data, test_data):
         classifier = nltk.NaiveBayesClassifier.train(training_data)

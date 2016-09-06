@@ -23,22 +23,41 @@ class SentenceParser:
             # features.append((sent_features, category))
             features.append((sent_features, answer))
             # print(datetime.datetime.now())
-            logging.debug('Features of Answer: ', (sent_features, answer))
+            print('Features of Answer: ', (sent_features, answer))
             # print(datetime.datetime.now())
         return features
 
     def extract_feature(self, text):
-        logging.debug("\nQUESTION: ", text)
+        print("\nQUESTION: ", text)
         words = self.preprocess(text)
-        logging.debug("After  Preprocess: ", words)
+        print("After  Preprocess: ", words)
         # YOUR CODE HERE
 
-        pass
+        # Tag words
+        tagged_words = [nltk.pos_tag(word_tokenize(words))]
+
+        # Extract keys
+        keys = self.extract_keys(tagged_words)
+
+        # Stemming
+        stemmed_words = [self.stemmer.stem(key) for key in keys]
+        return self.get_feature_set(stemmed_words)
 
     def preprocess(self, sentence):
         # YOUR CODE HERE
+        # make all lower case
+        sentence = sentence.lower()
 
-        pass
+        #tokenize / segment the words & remove punctuations
+        tokenizer = RegexpTokenizer(r'\w+')
+        tokens = tokenizer.tokenize(sentence)
+
+        # stop words
+        set_of_stopwords = set(stopwords.words('english'))
+        filtered_words = [word for word in tokens if not word in set_of_stopwords]
+
+        # join the words
+        return " ".join(filtered_words)
 
     def extract_keys(self, sentences):
         sent_keys = []
