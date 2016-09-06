@@ -51,6 +51,6 @@ class HelpApi(Resource):
     ans['answer'] = format_answer(ans['answer'], awayday_info)
     ans['timestamp'] = get_timestamp()
 
-    if ans['probability'] < 0.2:
+    if ans['probability'] < 0.1:
       ans['answer'] = default_response
     return {"reply": ans['answer']}
